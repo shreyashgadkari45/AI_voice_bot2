@@ -1,0 +1,1 @@
+import sqlite3; c = sqlite3.connect('customer_care.db'); c.row_factory = sqlite3.Row; cursor = c.cursor(); cursor.execute('SELECT name FROM sqlite_master WHERE type=\"table\"'); tables = [row[0] for row in cursor.fetchall()]; print([ (t, [r['name'] for r in c.execute(f'PRAGMA table_info({t})').fetchall()]) for t in tables if t != 'sqlite_sequence' ])
