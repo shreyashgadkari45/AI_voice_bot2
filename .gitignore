@@ -1,0 +1,51 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python caches and test caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node dependencies and frontend build output
+frontend/node_modules/
+frontend/dist/
+node_modules/
+dist/
+
+# Runtime logs
+*.log
+*.out
+*.err
+
+# Local databases and checkpoint files
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Generated runtime data
+audio/
+recordings/
+conversations/
+tmp-browser-profile/
+tmp-browser-profile-edge/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
